@@ -1,0 +1,23 @@
+car_voice:
+  output_wav_path: "D:/UserFiles/文件/研究生/工作项目/机器人框架v2/car_voice/output.wav"
+  init_wav_path: 'D:/UserFiles/文件/研究生/工作项目/机器人框架v2/car_voice/init.wav'
+  change_wav_path: 'D:/UserFiles/文件/研究生/工作项目/机器人框架v2/car_voice/change.wav'
+  mic_name: 'UACDemoV1.0: USB Audio (hw:2,0)'
+  threshold: 2500
+  baidu_API_KEY: 'UwS3sG8nwyderc7plFV1fKhP'
+  baidu_SECRET_KEY: 'ihnzCIhHIWndQmfryCFmVryqqilRIzEE'
+
+car_knowledge:
+  item_loc: {"杯子": "cup", "茶包": "chabao", "书": "book", "饮水机": "water", "我": "hand", "托盘": "tuopan"}
+  locations: [{ "name": 0, "位置": '家', "location": "{'x': -1.665869513186393, 'y': 0.8659740001420492, 'yaw': -2.371841669082642, 'z': 0.0}"},
+              { "name": 1, "位置": '厨房', "location": "{'x': -1.495957080318595, 'y': 4.097709900072579, 'yaw': -0.6414728367165939, 'z': 0.0}" },
+              { "name": 6, "位置": '客厅', "location": "{'x': 0.17, 'y': 1.83, 'yaw': -0.78, 'z': 0.0}" },
+             ] # 一号位置为白桌子旁，二号为产线
+
+  HanLP_auth: "MzIxN0BiYnMuaGFubHAuY29tOkI0V0J3WE9CQVVyME1WMTg="
+  OpenAI_API_Key: "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"
+
+  # wifi name = "504vcm",  
+  car15_host: '192.168.50.30'
+  computer_host: '192.168.50.109'
+  # computer_host: '192.168.1.65'

@@ -1,0 +1,204 @@
+{
+    "nodes": [
+        {
+            "id": "knowledge base",
+            "type": "concept",
+            "name": "knowledge base"
+        },
+        {
+            "id": "background",
+            "type": "concept",
+            "name": "background"
+        },
+        {
+            "id": "prospect",
+            "type": "concept",
+            "name": "prospect"
+        },
+        {
+            "id": "room_office",
+            "type": "Room",
+            "name": "\u4e66\u623f",
+            "location": "{'x':0.38, 'y':2.41, 'z':94.05, 'yaw':3.14*0.55}",
+            "TYPE": "Room"
+        },
+        {
+            "id": "room_bedroom",
+            "type": "Room",
+            "name": "\u5367\u5ba4",
+            "location": "{'x':0.38, 'y':2.41, 'z':94.05, 'yaw':3.14*0.55}",
+            "TYPE": "Room"
+        },
+        {
+            "id": "room_kitchen",
+            "type": "Room",
+            "name": "\u53a8\u623f",
+            "location": "{'x':0.38, 'y':2.41, 'z':94.05, 'yaw':3.14*0.55}",
+            "TYPE": "Room"
+        },
+        {
+            "id": "office_table",
+            "type": "region",
+            "name": "\u684c\u5b50"
+        },
+        {
+            "id": "office_chair",
+            "type": "region",
+            "name": "\u6905\u5b50"
+        },
+        {
+            "id": "office_sofa",
+            "type": "region",
+            "name": "\u6c99\u53d1"
+        },
+        {
+            "id": "kitchen_table",
+            "type": "region",
+            "name": "\u684c\u5b50"
+        },
+        {
+            "id": "bedroom_bed",
+            "type": "region",
+            "name": "\u5e8a"
+        },
+        {
+            "id": "bedroom_table",
+            "type": "region",
+            "name": "\u684c\u5b50"
+        },
+        {
+            "id": "item_apple",
+            "type": "Item",
+            "name": "\u82f9\u679c",
+            "\u989c\u8272": "\u7ea2\u8272",
+            "\u6240\u5c5e": "\u5c0f\u7ea2"
+        },
+        {
+            "id": "item_keyboard",
+            "type": "Item",
+            "name": "\u952e\u76d8",
+            "\u989c\u8272": "\u7070\u8272",
+            "\u6240\u5c5e": "\u5c0f\u7ea2"
+        },
+        {
+            "id": "item_computer",
+            "type": "Item",
+            "name": "\u7535\u8111",
+            "\u989c\u8272": "\u9ed1\u8272",
+            "\u6240\u5c5e": "\u5c0f\u660e"
+        },
+        {
+            "id": "item_cup_green",
+            "type": "Item",
+            "name": "\u676f\u5b50",
+            "\u989c\u8272": "\u767d\u8272",
+            "\u6240\u5c5e": "\u5c0f\u660e"
+        },
+        {
+            "id": "item_cup_white",
+            "type": "Item",
+            "name": "\u676f\u5b50",
+            "\u989c\u8272": "\u9ed1\u8272",
+            "\u6240\u5c5e": "\u5c0f\u7ea2"
+        },
+        {
+            "id": "function_paocha",
+            "type": "function",
+            "name": "\u6ce1\u8336"
+        },
+        {
+            "id": "locationA",
+            "type": "location",
+            "name": "\u5730\u70b9A",
+            "location": "{'x':0.38, 'y':2.41, 'z':94.05, 'yaw':3.14*0.55}",
+            "TYPE": "location"
+        }
+    ],
+    "relationships": [
+        {
+            "from": "knowledge base",
+            "to": "background",
+            "type": "CONTAINS"
+        },
+        {
+            "from": "knowledge base",
+            "to": "prospect",
+            "type": "CONTAINS"
+        },
+        {
+            "from": "background",
+            "to": "room_office",
+            "type": "CONTAINS"
+        },
+        {
+            "from": "background",
+            "to": "room_kitchen",
+            "type": "CONTAINS"
+        },
+        {
+            "from": "background",
+            "to": "room_bedroom",
+            "type": "CONTAINS"
+        },
+        {
+            "from": "room_bedroom",
+            "to": "bedroom_bed",
+            "type": "CONTAINS"
+        },
+        {
+            "from": "room_bedroom",
+            "to": "bedroom_table",
+            "type": "CONTAINS"
+        },
+        {
+            "from": "room_office",
+            "to": "office_table",
+            "type": "CONTAINS"
+        },
+        {
+            "from": "room_office",
+            "to": "office_chair",
+            "type": "CONTAINS"
+        },
+        {
+            "from": "room_office",
+            "to": "office_sofa",
+            "type": "CONTAINS"
+        },
+        {
+            "from": "room_kitchen",
+            "to": "kitchen_table",
+            "type": "CONTAINS"
+        },
+        {
+            "from": "prospect",
+            "to": "item_apple",
+            "type": "CONTAINS"
+        },
+        {
+            "from": "prospect",
+            "to": "item_keyboard",
+            "type": "CONTAINS"
+        },
+        {
+            "from": "prospect",
+            "to": "item_computer",
+            "type": "CONTAINS"
+        },
+        {
+            "from": "prospect",
+            "to": "item_cup_green",
+            "type": "CONTAINS"
+        },
+        {
+            "from": "prospect",
+            "to": "item_cup_white",
+            "type": "CONTAINS"
+        },
+        {
+            "from": "function_paocha",
+            "to": "locationA",
+            "type": "at"
+        }
+    ]
+}
